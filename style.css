@@ -3,7 +3,7 @@ body {
     margin: 0;
     background-color: #f0f8ff; /* Genel bir arka plan rengi (tamamen şeffaf olmayacaksa) */
     color: #333;
-    background-image: url('img/logo-sjk.jpg');
+    background-image: url('logo-sjk.jpg');
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: contain; /* Logonun boyutunu ayarlayın */
