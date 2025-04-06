@@ -15,7 +15,7 @@ function showSlides() {
     }
     slides[slideIndex-1].style.display = "block";
     dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 3000); // Her 3 saniyede bir değişir
+    setTimeout(showSlides, 3000); 
 }
 
 function plusSlides(n) {
@@ -56,7 +56,7 @@ function openTab(tabName) {
     event.currentTarget.classList.add("active");
 }
 
-// Sayfa yüklendiğinde ilk sekmeyi aktif et
+
 document.addEventListener('DOMContentLoaded', function() {
     openTab('pide');
 });
