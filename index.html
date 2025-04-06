@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>söek</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="img/logo-sjk.jpg" alt="Restoran Logosu">
+        <h1>Side Özel Eğitim Merkezi Komutanlığı</h1>
+    </header>
+
+    <section id="menu-tabs">
+        <div class="tab-buttons">
+            <button class="tab-button active" onclick="openTab('pide')">Pide Çeşitleri</button>
+            <button class="tab-button" onclick="openTab('izgara')">Izgara Çeşitleri</button>
+            <button class="tab-button" onclick="openTab('ara-sicak')">Ara Sıcak Çeşitleri</button>
+            <button class="tab-button" onclick="openTab('salata')">Salata Çeşitleri</button>
+            <button class="tab-button" onclick="openTab('meze')">Meze Çeşitleri</button>
+            <button class="tab-button" onclick="openTab('tatli')">Meyve ve Tatlı Çeşitleri</button>
+            <button class="tab-button" onclick="openTab('icecekler')">Alkolsüz İçecekler</button>
+            <button class="tab-button" onclick="openTab('corba')">Çorba Çeşitleri</button>
+            <button class="tab-button" onclick="openTab('balik')">Balık Çeşitleri</button>
+        </div>
+
+        <div id="pide" class="tab-content active">
+            <h3>Geleneksel Pide Lezzetlerimiz</h3>
+            <ul class="food-list">
+                <li class="food-item">
+                    
+                    <div class="food-details">
+                        <h4 class="food-name">Tırnaklı Pide</h4>
+                        <p class="food-portion">Porsiyon: Tek</p>
+                        <p class="food-price">Fiyat: 9,63 TL</p>
+                    </div>
+                </li>
+                </ul>
+        </div>
+
+        <div id="izgara" class="tab-content">
+            <h3>Lezzetli Izgara Seçeneklerimiz</h3>
+            <ul class="food-list">
+                <li class="food-item">
+                    <div class="food-details">
+                        <h4 class="food-name">Karışık Izgara Spcecial</h4>
+                        <p class="food-portion">Porsiyon</p>
+                        <p class="food-price">Fiyat:  530,70 TL</p>
+                        <p class="food-ingredients">İçindekiler: Porsiyon Adana, 2 Adet Köfte, 1 Porsiyon Tavuk Kanat, 1 Porsiyon, 1 Porsiyon 
+                            Tavuk Şiş, pişmiş domates, biber ve soğan saltası ile servis edilir.
+                        </p>
+                    </div>
+                </li>
+                <li class="food-item">
+                    <div class="food-details">
+                        <h4 class="food-name">Adana Beyti</h4>
+                        <p class="food-portion">Porsiyon</p>
+                        <p class="food-price">Fiyat: 228,36 TL</p>
+                        <p class="food-ingredients">İçindekiler: 210 gr. Dana ve Kuzu eti Karışımı ızgarada pişirilip lavaşa sarılarak; yoğurt
+                            pişmiş domates, biber ve soğan salatası ile servis edilir.
+                        </p>
+                    </div>
+                </li>
+                <li class="food-item">
+                    <div class="food-details">
+                        <h4 class="food-name">Adana Kebap</h4>
+                        <p class="food-portion">Porsiyon</p>
+                        <p class="food-price">Fiyat: 212,89 TL</p>
+                        <p class="food-ingredients">İçindekiler: 170 gr. Dana ve Kuzu eti karışımı ızgarada pişirilip; pişmiş
+                            domates, biber ve soğan salatası ile servis edilir.
+                        </p>
+                    </div>
+                </li>
+                <li class="food-item">
+                    <div class="food-details">
+                        <h4 class="food-name">Piliç Şiş</h4>
+                        <p class="food-portion">Porsiyon</p>
+                        <p class="food-price">Fiyat: 137,10 TL</p>
+                        <p class="food-ingredients">İçindekiler: 300 gr. Kuşbaşı doğranmış piliç ızgarada pişirilerek; pişmiş
+                            domates, biber, soğan salatası ve kibrit patates ile servis edilir.
+                        </p>
+                    </div>
+                </li>
+                <li class="food-item">
+                    <div class="food-details">
+                        <h4 class="food-name">Urfa Kebap</h4>
+                        <p class="food-portion">Porsiyon</p>
+                        <p class="food-price">Fiyat: 211,08 TL</p>
+                        <p class="food-ingredients">İçindekiler: 170 gr. Dana ve kuzu eti karışımı içine acı pul biber daha az eklenip 
+                            ızgarada pişirilip; pişmiş domates, biber ve soğan salatası ile servis edilir.
+                        </p>
+                    </div>
+                </li>
+                <li class="food-item">
+                    <div class="food-details">
+                        <h4 class="food-name">Piliç Izgara</h4>
+                        <p class="food-portion">Porsiyon</p>
+                        <p class="food-price">Fiyat: 144,73 TL</p>
+                        <p class="food-ingredients">İçindekiler: 300 gr. Tavuk göğüsü ızgarada pişilirip; pişmiş domates, biber, soğan salatası
+                            ve kibrit patates ile servis edilir.
+                        </p>
+                    </div>
+                </li>
+                <li class="food-item">
+                    <div class="food-details">
+                        <h4 class="food-name">Kuzu Pirzola</h4>
+                        <p class="food-portion">Porsiyon</p>
+                        <p class="food-price">Fiyat: 522,88 TL</p>
+                        <p class="food-ingredients">İçindekiler: 400 gr. Kuzu kalem ızgarada pişirilip; pişmiş domates, biber ve soğan salatası 
+                            ile servis edilir.
+                        </p>
+                    </div>
+                </li>
+                <li class="food-item">
+                    <div class="food-details">
+                        <h4 class="food-name">Piliç Kanat Şii </h4>
+                        <p class="food-portion">Porsiyon</p>
+                        <p class="food-price">Fiyat: 153,77 TL</p>
+                        <p class="food-ingredients">İçindekiler: 350 gr. Piliç kanat ızgarada pişirilip; pişmiş domates, biber ve
+                            soğan salatası ile servis edilir.
+                        </p>
+                    </div>
+                </li>
+                <li class="food-item">
+                    <div class="food-details">
+                        <h4 class="food-name">Kuzu Şiş</h4>
+                        <p class="food-portion">Porsiyon</p>
+                        <p class="food-price">Fiyat: 257,85 TL</p>
+                        <p class="food-ingredients">İçindekiler: 240 gr. Kuzu kuşbaşı eti ızgarada pişirilip; pişmiş domates, biber, soğan salatası
+                            ve kibrit patates ile servis edilir.
+                        </p>
+                    </div>
+                </li>
+                <li class="food-item">
+                    <div class="food-details">
+                        <h4 class="food-name">Köfte Izgara</h4>
+                        <p class="food-portion">Porsiyon</p>
+                        <p class="food-price">Fiyat: 240,28 TL</p>
+                        <p class="food-ingredients">İçindekiler: 260 gr. Dana köftelik kıyma ızgarada pişirilip; pişmiş domates, biber, 
+                            soğan salatası ve kibrit patates ile servis edilir.
+                        </p>
+                    </div>
+                </li>
+                <li class="food-item">
+                    <div class="food-details">
+                        <h4 class="food-name">Kuzu Ciğer Şiş</h4>
+                        <p class="food-portion">Porsiyon</p>
+                        <p class="food-price">Fiyat: ...... TL</p>
+                        <p class="food-ingredients">İçindekiler: 220 gr. Kuzu ciğer kuşbaşı ızgarada pişirilip; pişmiş domates, biber, 
+                            soğan salatası ve kibrit patates ile servis edilir.
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div id="ara-sicak" class="tab-content">
+            <h3>Çeşitli ve Lezzetli Ara Sıcaklarımız</h3>
+            <ul class="food-list">
+                <li class="food-item">
+                    <div class="food-details">
+                        <h4 class="food-name">Çin Böreği (Sebzeli)</h4>
+                        <p class="food-portion">Porsiyon (5 adet)</p>
+                        <p class="food-price">Fiyat: ...... TL</p>
+                    </div>
+                </li>
+                <li class="food-item">
+                    <div class="food-details">
+                        <h4 class="food-name">Çin Böreği (Tavuklu)</h4>
+                        <p class="food-portion">Porsiyon (5 adet)</p>
+                        <p class="food-price">Fiyat: ..... TL</p>
+                    </div>
+                </li>
+                <li class="food-item">
+                    <div class="food-details">
+                        <h4 class="food-name">Jumbo Karides Tava</h4>
+                        <p class="food-portion">Porsiyon </p>
+                        <p class="food-price">Fiyat: ..... TL</p>
+                    </div>
+                </li>
+                <li class="food-item">
+                    <div class="food-details">
+                        <h4 class="food-name">Kalamar Tava</h4>
+                        <p class="food-portion">Porsiyon </p>
+                        <p class="food-price">Fiyat: 70,76 TL</p>
+                    </div>
+                </li>
+                <li class="food-item">
+                    <div class="food-details">
+                        <h4 class="food-name">Karides Güveç</h4>
+                        <p class="food-portion">Porsiyon </p>
+                        <p class="food-price">Fiyat: 108,31 TL</p>
+                    </div>
+                </li>
+                <li class="food-item">
+                    <div class="food-details">
+                        <h4 class="food-name">Patetes Kızartması</h4>
+                        <p class="food-portion">Porsiyon </p>
+                        <p class="food-price">Fiyat: 26,66 TL</p>
+                    </div>
+                </li>
+                <li class="food-item">
+                    <div class="food-details">
+                        <h4 class="food-name">Sigara Böreği</h4>
+                        <p class="food-portion">Porsiyon </p>
+                        <p class="food-price">Fiyat: ..... TL</p>
+                    </div>
+                </li>
+                <li class="food-item">
+                    <div class="food-details">
+                        <h4 class="food-name">Paçanga Böreği</h4>
+                        <p class="food-portion">Porsiyon </p>
+                        <p class="food-price">Fiyat: ..... TL</p>
+                    </div>
+                </li>
+                <li class="food-item">
+                    <div class="food-details">
+                        <h4 class="food-name">Soğan Halka Kroket</h4>
+                        <p class="food-portion">Porsiyon </p>
+                        <p class="food-price">Fiyat: 17,92 TL</p>
+                    </div>
+                </li>
+                <li class="food-item">
+                    <div class="food-details">
+                        <h4 class="food-name">İçli Köfte</h4>
+                        <p class="food-portion">Porsiyon </p>
+                        <p class="food-price">Fiyat: ..... TL</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div id="salata" class="tab-content">
+            <h3>Taptaze Salata Çeşitlerimiz</h3>
+            <ul class="food-list">
+                <li class="food-item">
+                    <div class="food-details">
+                        <h4 class="food-name">Çoban Salata</h4>
+                        <p class="food-price">Fiyat: 35,17 TL</p>
+                    </div>
+                </li>
+                <li class="food-item">
+                    <div class="food-details">
+                        <h4 class="food-name">Yeşil Salata</h4>
+                        <p class="food-price">Fiyat: ..... TL</p>
+                    </div>
+                </li>
+                <li class="food-item">
+                    <div class="food-details">
+                        <h4 class="food-name">Gavurdağ Salata</h4>
+                        <p class="food-price">Fiyat: 36,05 TL</p>
+                    </div>
+                </li>
+                <li class="food-item">
+                    <div class="food-details">
+                        <h4 class="food-name">Roka Salatası</h4>
+                        <p class="food-price">Fiyat: 23,38 TL</p>
+                    </div>
+                </li>
+                <li class="food-item">
+                    <div class="food-details">
+                        <h4 class="food-name">Mevsim Salatası</h4>
+                        <p class="food-price">Fiyat: 21,13 TL</p>
+                    </div>
+                </li>
+                <li class="food-item">
+                    <div class="food-details">
+                        <h4 class="food-name">Limon Porsiyon</h4>
+                        <p class="food-price">Fiyat: 5,72 TL</p>
+                    </div>
+                </li>
+                <li class="food-item">
+                    <div class="food-details">
+                        <h4 class="food-name">Soğan Söğüş</h4>
+                        <p class="food-price">Fiyat: 26,29 TL</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div id="meze" class="tab-content">
+            <h3>Eşsiz Meze Lezzetlerimiz</h3>
+            <ul class="food-list">
+                <li class="food-item">
+                    <div class="food-details">
+                        <h4 class="food-name">Abaganuş</h4>
+                        <p class="food-price">Fiyat: 53,88</p>
+                    </div>
+                </li>
+                <li class="food-item">
+                    <div class="food-details">
+                        <h4 class="food-name">Antep Acılı Ezme</h4>
+                        <p class="food-price">Fiyat: 51,18 TL</p>
+                    </div>
+                </li>
+                <li class="food-item">
+                    <div class="food-details">
+                        <h4 class="food-name">Havuç Tarator</h4>
+                        <p class="food-price">Fiyat: 39,43 TL</p>
+                    </div>
+                </li>
+                <li class="food-item">
+                    <div class="food-details">
+                        <h4 class="food-name">Haydari</h4>
+                        <p class="food-price">Fiyat: 34,58 TL</p>
+                    </div>
+                </li>
+                <li class="food-item">
+                    <div class="food-details">
+                        <h4 class="food-name">Humus</h4>
+                        <p class="food-price">Fiyat: 50,00 TL</p>
+                    </div>
+                </li>
+                <li class="food-item">
+                    <div class="food-details">
+                        <h4 class="food-name">Közlenmiş Biber</h4>
+                        <p class="food-price">Fiyat: 42,50 TL</p>
+                    </div>
+                </li>
+                <li class="food-item">
+                    <div class="food-details">
+                        <h4 class="food-name">Yoğurtlu Semizotu</h4>
+                        <p class="food-price">Fiyat: 20,61 TL</p>
+                    </div>
+                </li>
+                <li class="food-item">
+                    <div class="food-details">
+                        <h4 class="food-name">Yoğurt Açık (Porsiyon)</h4>
+                        <p class="food-price">Fiyat: 26,52 TL</p>
+                    </div>
+                </li>
+                <li class="food-item">
+                    <div class="food-details">
+                        <h4 class="food-name">Peynir Tabağı</h4>
+                        <p class="food-price">Fiyat: 26,20 TL</p>
+                    </div>
+                </li>
+                <li class="food-item">
+                    <div class="food-details">
+                        <h4 class="food-name">Şakşuka</h4>
+                        <p class="food-price">Fiyat: 40,17 TL</p>
+                    </div>
+                </li>
+                <li class="food-item">
+                    <div class="food-details">
+                        <h4 class="food-name">Cacık</h4>
+                        <p class="food-price">Fiyat: 19,31 TL</p>
+                    </div>
+                </li>
+                <li class="food-item">
+                    <div class="food-details">
+                        <h4 class="food-name">Pembe Sultan</h4>
+                        <p class="food-price">Fiyat: 23,10 TL</p>
+                    </div>
+                </li>
+                <li class="food-item">
+                    <div class="food-details">
+                        <h4 class="food-name">Köpoğlu</h4>
+                        <p class="food-price">Fiyat: 40,96 TL</p>
+                    </div>
+                </li>
+                <li class="food-item">
+                    <div class="food-details">
+                        <h4 class="food-name">Aksu Piyazı</h4>
+                        <p class="food-price">Fiyat: 46,93 TL</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div id="tatli" class="tab-content">
+            <h3>Tatlı ve Meyve Seçeneklerimiz</h3>
+            <ul class="food-list">
+                <li class="food-item">
+                    <div class="food-details">
+                        <h4 class="food-name">Karpuz</h4>
+                        <p class="food-portion">Porsiyon</p>
+                        <p class="food-price">Fiyat: 10,12 TL</p>
+                    </div>
+                </li>
+                <li class="food-item">
+                    <div class="food-details">
+                        <h4 class="food-name">Kavun</h4>
+                        <p class="food-portion">Porsiyon</p>
+                        <p class="food-price">Fiyat: 14,91 TL</p>
+                    </div>
+                </li>
+                <li class="food-item">
+                    <div class="food-details">
+                        <h4 class="food-name">Güvenç Helva</h4>
+                        <p class="food-portion">Porsiyon</p>
+                        <p class="food-price">Fiyat: 70,00 TL</p>
+                    </div>
+                </li>
+                <li class="food-item">
+                    <div class="food-details">
+                        <h4 class="food-name">Chefline Sufle</h4>
+                        <p class="food-portion">Porsiyon</p>
+                        <p class="food-price">Fiyat: ...... TL</p>
+                    </div>
+                </li>
+                <li class="food-item">
+                    <div class="food-details">
+                        <h4 class="food-name">Antep Fıstıklı Katmer</h4>
+                        <p class="food-portion">Porsiyon</p>
+                        <p class="food-price">Fiyat: 39,00 TL</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div id="icecekler" class="tab-content">
+            <h3>Serinletici Alkolsüz İçeceklerimiz</h3>
+            <ul class="food-list">
+                <li class="food-item no-image">
+                    <div class="food-details">
+                        <h4 class="food-name">Ayran (200 ml)</h4>
+                        <p class="food-price">Fiyat: 6,03 TL</p>
+                    </div>
+                </li>
+                <li class="food-item no-image">
+                    <div class="food-details">
+                        <h4 class="food-name">Coca Cola (330 ml)</h4>
+                        <p class="food-price">Fiyat: 22,85 TL</p>
+                    </div>
+                </li>
+                <li class="food-item no-image">
+                    <div class="food-details">
+                        <h4 class="food-name">Coca-Cola Light (330 ml)</h4>
+                        <p class="food-price">Fiyat: 22,85 TL</p>
+                    </div>
+                </li>
+                <li class="food-item no-image">
+                    <div class="food-details">
+                        <h4 class="food-name">Coca-Cola Zero (330 ml)</h4>
+                        <p class="food-price">Fiyat: 22,85 TL</p>
+                    </div>
+                </li>
+                <li class="food-item no-image">
+                    <div class="food-details">
+                        <h4 class="food-name">Fanta (330 ml)</h4>
+                        <p class="food-price">Fiyat: 22,85 TL</p>
+                    </div>
+                </li>
+                <li class="food-item no-image">
+                    <div class="food-details">
+                        <h4 class="food-name">Sprite (330 ml)</h4>
+                        <p class="food-price">Fiyat: 22,85 TL</p>
+                    </div>
+                </li>
+                <li class="food-item no-image">
+                    <div class="food-details">
+                        <h4 class="food-name">Ice Tea (330 ml)</h4>
+                        <p class="food-price">Fiyat: 22,85 TL</p>
+                    </div>
+                </li>
+                <li class="food-item no-image">
+                    <div class="food-details">
+                        <h4 class="food-name">Meyve Suyu - Şeftali (330 ml)</h4>
+                        <p class="food-price">Fiyat: 22,85 TL</p>
+                    </div>
+                </li>
+                <li class="food-item no-image">
+                    <div class="food-details">
+                        <h4 class="food-name">Meyve Suyu - Vişne (330 ml)</h4>
+                        <p class="food-price">Fiyat: 22,85 TL</p>
+                    </div>
+                </li>
+                <li class="food-item no-image">
+                    <div class="food-details">
+                        <h4 class="food-name">Meyve Suyu - Kayısı (330 ml)</h4>
+                        <p class="food-price">Fiyat: 22,85 TL</p>
+                    </div>
+                </li>
+                <li class="food-item no-image">
+                    <div class="food-details">
+                        <h4 class="food-name">Meyve Suyu - Karışık (330 ml)</h4>
+                        <p class="food-price">Fiyat: 22,85 TL</p>
+                    </div>
+                </li>
+                <li class="food-item no-image">
+                    <div class="food-details">
+                        <h4 class="food-name">Meyve Suyu - Portakal (330 ml)</h4>
+                        <p class="food-price">Fiyat: ..... TL</p>
+                    </div>
+                </li>
+                <li class="food-item no-image">
+                    <div class="food-details">
+                        <h4 class="food-name">Sade Soda (200 ml)</h4>
+                        <p class="food-price">Fiyat: 5,98 TL</p>
+                    </div>
+                </li>
+                <li class="food-item no-image">
+                    <div class="food-details">
+                        <h4 class="food-name">Elmalı Soda (200 ml)</h4>
+                        <p class="food-price">Fiyat: 7,98 TL</p>
+                    </div>
+                </li>
+                <li class="food-item no-image">
+                    <div class="food-details">
+                        <h4 class="food-name">Su (1,5 lt)</h4>
+                        <p class="food-price">Fiyat: 9,51 TL</p>
+                    </div>
+                </li>
+                <li class="food-item no-image">
+                    <div class="food-details">
+                        <h4 class="food-name">Su (0,5 lt)</h4>
+                        <p class="food-price">Fiyat: 4,01 TL</p>
+                    </div>
+                </li>
+                <li class="food-item no-image">
+                    <div class="food-details">
+                        <h4 class="food-name">Şalgam Acılı (250 ml)</h4>
+                        <p class="food-price">Fiyat: 12,97 TL</p>
+                    </div>
+                </li>
+                <li class="food-item no-image">
+                    <div class="food-details">
+                        <h4 class="food-name">Şalgam Acısız (250 ml)</h4>
+                        <p class="food-price">Fiyat: 12,97 TL</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div id="corba" class="tab-content">
+            <h3>Sıcak ve İçinizi Isıtan Çorbalarımız</h3>
+            <ul class="food-list">
+                <li class="food-item no-image">
+                    <div class="food-details">
+                        <h4 class="food-name">Balık Çorbası</h4>
+                        <p class="food-portion">Porsiyon</p>
+                        <p class="food-price">Fiyat: 79,80 TL</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div id="balik" class="tab-content">
+            <h3>Tazelik Dolu Balık Çeşitlerimiz</h3>
+            <ul class="food-list">
+                <li class="food-item no-image">
+                    <div class="food-details">
+                        <h4 class="food-name">Levrek Izgara</h4>
+                        <p class="food-portion">Porsiyon</p>
+                        <p class="food-price">Fiyat: 313,86 TL</p>
+                    </div>
+                </li>
+                <li class="food-item no-image">
+                    <div class="food-details">
+                        <h4 class="food-name">Levrek Fleto Izgara (1/2 Deniz Levreği)</h4>
+                        <p class="food-portion">Porsiyon</p>
+                        <p class="food-price">Fiyat: 288,62 TL</p>
+                    </div>
+                </li>
+                <li class="food-item no-image">
+                    <div class="food-details">
+                        <h4 class="food-name">Çipura Izgara</h4>
+                        <p class="food-portion">Porsiyon</p>
+                        <p class="food-price">Fiyat: 300,16 TL</p>
+                    </div>
+                </li>
+                <li class="food-item no-image">
+                    <div class="food-details">
+                        <h4 class="food-name">Çipura Fleto Izgara (1/2 Deniz Çipura)</h4>
+                        <p class="food-portion">Porsiyon</p>
+                        <p class="food-price">Fiyat: 301,59 TL</p>
+                    </div>
+                </li>
+                <li class="food-item no-image">
+                    <div class="food-details">
+                        <h4 class="food-name">Somon Izgara</h4>
+                        <p class="food-portion">Porsiyon</p>
+                        <p class="food-price">Fiyat: 170,52 TL</p>
+                    </div>
+                </li>
+                <li class="food-item no-image">
+                    <div class="food-details">
+                        <h4 class="food-name">Dil Balığı Fleto Tava</h4>
+                        <p class="food-portion">Porsiyon</p>
+                        <p class="food-price">Fiyat: 129,93 TL</p>
+                    </div>
+                </li>
+                <li class="food-item no-image">
+                    <div class="food-details">
+                        <h4 class="food-name">Mezgit Fleto Tava</h4>
+                        <p class="food-portion">Porsiyon</p>
+                        <p class="food-price">Fiyat: 166,42 TL</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+    </section>
+
+    <section id="antalya">
+        <h2>Manavgat'ta Keşfedilecek Yerler</h2>
+        <div class="slideshow-container">
+            <div class="slide fade">
+                <a href="https://www.google.com/maps/place/K%C3%B6pr%C3%BCl%C3%BC+Kanyon+Milli+Park%C4%B1/@37.163204,31.223873,17z/data=!3m1!4b1!4m6!3m5!1s0x14c3169a82171411:0x9c793e275509364!8m2!3d37.163204!4d31.223873!16s%2Fg%2F121x649v" target="_blank">
+                    <img src="img/koprulu-kanyon.jpg" alt="Köprülü Kanyon">
+                </a>
+                <div class="text">Köprülü Kanyon: Türkiye'nin en uzun kanyonlarından biri. Rafting ve doğa yürüyüşü için popüler bir nokta.</div>
+            </div>
+
+            <div class="slide fade">
+                <a href="https://www.google.com/maps/place/Taz%C4%B1+Kanyonu/@37.274846,31.317877,17z/data=!3m1!4b1!4m6!3m5!1s0x14c32b7511551155:0x8a310105a697999b!8m2!3d37.274846!4d31.317877!16s%2Fg%2F11f168_z0p" target="_blank">
+                    <img src="img/tazi-kanyonu.jpg" alt="Tazı Kanyonu">
+                </a>
+                <div class="text">Tazı Kanyonu: Muhteşem manzarası ve etkileyici kaya oluşumlarıyla dikkat çeken bir kanyon.</div>
+            </div>
+
+            <div class="slide fade">
+                <a href="https://www.google.com/maps/place/Side+Antik+Kenti/@36.770488,31.381495,17z/data=!3m1!4b1!4m6!3m5!1s0x14c37b58e032b385:0x33103319c9b3c5c!8m2!3d36.770488!4d31.381495!16s%2Fg%2F11b6q6606h" target="_blank">
+                    <img src="img/side-antik-kenti.jpg" alt="Side Antik Kenti">
+                </a>
+                <div class="text">Side Antik Kenti: Tarihi kalıntıları, tapınakları ve denize uzanan konumuyla büyüleyici bir antik kent.</div>
+            </div>
+
+            <div class="slide fade">
+                <a href="https://www.google.com/maps/place/Aspendos+Antik+Tiyatrosu/@36.921485,31.165987,17z/data=!3m1!4b1!4m6!3m5!1s0x14c35291b334c71d:0x61b7c012d946374f!8m2!3d36.921485!4d31.165987!16s%2Fg%2F11b6q6606h" target="_blank">
+                    <img src="img/aspendos-antik-kent.jpg" alt="Aspendos Antik Tiyatrosu">
+                </a>
+                <div class="text">Aspendos Antik Tiyatrosu: Roma dönemine ait, günümüze kadar en iyi korunmuş antik tiyatrolardan biri.</div>
+            </div>
+
+            <div class="slide fade">
+                <a href="https://www.google.com/maps/place/Manavgat+%C5%9Eelalesi/@36.785118,31.442183,17z/data=!3m1!4b1!4m6!3m5!1s0x14c379579c9a0c41:0x492c03144259811d!8m2!3d36.785118!4d31.442183!16s%2Fg%2F11b6q6606h" target="_blank">
+                    <img src="img/manavgat-selalesi.jpg" alt="Manavgat Şelalesi">
+                </a>
+                <div class="text">Manavgat Şelalesi: Çok yüksekten dökülmemesine rağmen geniş bir alana yayılan ve etkileyici bir görünüme sahip şelale.</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+    </section>
+
+    <footer>
+        © 2025 Side Özel Eğitim Merkezi Komutanlığı
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,286 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #f0f8ff; /* Genel bir arka plan rengi (tamamen şeffaf olmayacaksa) */
+    color: #333;
+    background-image: url('img/logo-sjk.jpg');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain; /* Logonun boyutunu ayarlayın */
+    background-attachment: fixed;
+}
+
+header {
+    background-color: rgba(52, 58, 64, 0.8); /* Koyu başlık yarı saydam */
+    color: white;
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header img {
+    height: 30px;
+    margin-right: 10px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+#menu-tabs {
+    background-color: rgba(255, 255, 255, 0.8); /* Menü alanı yarı saydam beyaz */
+    padding: 20px;
+}
+
+.tab-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.tab-button {
+    background: none;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+.tab-button.active {
+    color: darkblue;
+    border-bottom: 2px solid darkblue;
+}
+
+.tab-button:hover {
+    color: black;
+}
+
+.tab-content {
+    display: none;
+    padding: 15px;
+    text-align: center;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.tab-content img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#antalya {
+    background-color: rgba(255, 255, 255, 0.8); /* Antalya bölümü yarı saydam beyaz */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#antalya h2 {
+    color: #007bff;
+    margin-top: 0;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Slayt Gösterisi Stilleri (arka planı kendisinde yoksa etkilenmez) */
+.slideshow-container {
+    max-width: 800px;
+    position: relative;
+    margin: 20px auto;
+}
+
+.slide {
+    display: none;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.text {
+    color: #f2f2f2;
+    font-size: 14px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Slayt metni arka planı yarı saydam */
+    border-radius: 0 0 5px 5px;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+footer {
+    background-color: rgba(52, 58, 64, 0.8); /* Koyu altbilgi yarı saydam */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 0.9em;
+}
+
+/* Mobil Cihazlar İçin Ek Stiller */
+@media (max-width: 600px) {
+    .tab-buttons {
+        flex-direction: row;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        border-bottom: 1px solid #ccc;
+        padding: 10px 0;
+    }
+
+    .tab-button {
+        flex-shrink: 0;
+        margin: 0 10px;
+    }
+}
+
+/* Yemek Listesi Stilleri */
+.food-list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.food-item {
+    background-color: rgba(255, 255, 255, 0.9); /* Yemek öğeleri de biraz daha saydam olabilir */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.food-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.food-details {
+    padding: 15px;
+    text-align: center;
+}
+
+.food-name {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.food-portion,
+.food-price {
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.food-price {
+    font-weight: bold;
+    color: #28a745;
+}
+
+/* Mobil cihazlar için yemek listesi grid düzenlemesi */
+@media (max-width: 480px) {
+    .food-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+.food-ingredients {
+    color: #777;
+    font-size: 0.9em;
+    margin-bottom: 5px;
+    font-style: italic;
+}
+
+.food-item.no-image img {
+    display: none;
+}
+
+.food-item.no-image .food-details {
+    text-align: left;
+    padding-left: 15px;
+}
+
+.menu-image-placeholder {
+    color: #777;
+    font-size: 0.9em;
+    margin-top: 10px;
+    display: block;
+    text-align: center;
+}
