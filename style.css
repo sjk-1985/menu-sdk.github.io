@@ -1,9 +1,9 @@
 body {
     font-family: sans-serif;
     margin: 0;
-    background-color: #f0f8ff; 
+    background-color: #f0f8ff;
     color: #333;
-    background-image: url('logo-sjk.jpg');
+    background-image: url('img/logo-sjk.jpg');
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: contain; 
@@ -193,7 +193,7 @@ footer {
     font-size: 0.9em;
 }
 
-
+/* Mobil Cihazlar İçin Ek Stiller */
 @media (max-width: 600px) {
     .tab-buttons {
         flex-direction: row;
@@ -283,4 +283,37 @@ footer {
     margin-top: 10px;
     display: block;
     text-align: center;
+}
+.anasayfa-mesaj {
+    text-align: center;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.hosgeldiniz-baslik {
+    color: darkred;
+    margin-bottom: 15px;
+    font-size: 2em;
+}
+
+.hosgeldiniz-aciklama,
+.menuyu-kesfet,
+.konum-bilgisi,
+.afiyet-olsun {
+    color: darkgoldenrod;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.menuyu-kesfet {
+    font-style: italic;
+}
+
+.afiyet-olsun {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: darkblue; 
 }
