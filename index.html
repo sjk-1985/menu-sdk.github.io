@@ -15,7 +15,8 @@
 
     <section id="menu-tabs">
         <div class="tab-buttons">
-            <button class="tab-button active" onclick="openTab('pide')">Pide Çeşitleri</button>
+            <button class="tab-button active" onclick="openTab('anasayfa')"></button>
+            <button class="tab-button" onclick="openTab('pide')">Pide Çeşitleri</button>
             <button class="tab-button" onclick="openTab('izgara')">Izgara Çeşitleri</button>
             <button class="tab-button" onclick="openTab('ara-sicak')">Ara Sıcak Çeşitleri</button>
             <button class="tab-button" onclick="openTab('salata')">Salata Çeşitleri</button>
@@ -26,7 +27,27 @@
             <button class="tab-button" onclick="openTab('balik')">Balık Çeşitleri</button>
         </div>
 
-        <div id="pide" class="tab-content active">
+        <div class="tab-content active" id="anasayfa">
+            <div class="anasayfa-mesaj">
+                <h2 class="hosgeldiniz-baslik">Side Jandarma Kampı Restoranı'na Hoş Geldiniz!</h2>
+                <p class="hosgeldiniz-aciklama">
+                    Sıcak atmosferimizde, özenle hazırlanmış lezzetlerimizle siz değerli misafirlerimizi ağırlamaktan mutluluk duyuyoruz.
+                    Side Jandarma Kampı'nın huzurlu ortamında, damaklarınızı şenlendirecek bir deneyime davetlisiniz.
+                </p>
+                <p class="menuyu-kesfet">
+                    Zengin menümüzdeki birbirinden özel pide çeşitlerimizden, ızgaralarımızın eşsiz tadına,
+                    ara sıcaklarımızın keyfine, taptaze salatalarımızdan, geleneksel mezelerimize ve tatlılarımızın
+                    büyüsüne kadar her lezzeti keşfedin. Alkolsüz içeceklerimizle yemeğinizi tamamlayın.
+                </p>
+                <p class="konum-bilgisi">
+                    Restoranımız, Side Jandarma Kampı içerisinde bulunmaktadır ve tüm misafirlerimize açıktır.
+                    Sevdiklerinizle birlikte unutulmaz anlar yaşayacağınız bir mekan sizleri bekliyor.
+                </p>
+                <p class="afiyet-olsun">Afiyet olsun!</p>
+            </div>
+        </div>
+
+        <div id="pide" class="tab-content">
             <h3>Geleneksel Pide Lezzetlerimiz</h3>
             <ul class="food-list">
                 <li class="food-item">
