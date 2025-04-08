@@ -58,5 +58,5 @@ function openTab(tabName) {
 
 
 document.addEventListener('DOMContentLoaded', function() {
-    openTab('pide');
+    openTab('anasayfa');
 });
